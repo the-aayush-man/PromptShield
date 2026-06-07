@@ -4,5 +4,5 @@ if (-not (Test-Path $Python)) {
 }
 
 $env:PYTHONPATH = Join-Path (Get-Location) ".python_packages"
-& $Python -B "server.py" --host "127.0.0.1" --port 3000
+& $Python -B "server.py" --host "127.0.0.1" --port 8000
 
