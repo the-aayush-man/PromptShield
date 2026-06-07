@@ -1,0 +1,123 @@
+{
+  "accuracy": 0.9842908438061041,
+  "macro_f1": 0.9475505837159168,
+  "weighted_f1": 0.9842849746609558,
+  "per_class": {
+    "Safe Prompt": {
+      "precision": 0.9902672864613596,
+      "recall": 0.9906990263043163,
+      "f1": 0.9904831093352706,
+      "support": 13762
+    },
+    "Prompt Injection": {
+      "precision": 0.875,
+      "recall": 0.9545454545454546,
+      "f1": 0.9130434782608695,
+      "support": 22
+    },
+    "Jailbreak": {
+      "precision": 0.9433097123801584,
+      "recall": 0.9425239483548521,
+      "f1": 0.9429166666666666,
+      "support": 2401
+    },
+    "Data Extraction": {
+      "precision": 1.0,
+      "recall": 0.8125,
+      "f1": 0.896551724137931,
+      "support": 16
+    },
+    "Roleplay Manipulation": {
+      "precision": 0.995679012345679,
+      "recall": 0.9938385705483672,
+      "f1": 0.9947579401788468,
+      "support": 1623
+    }
+  },
+  "by_source": {
+    "injection_benign": {
+      "rows": 51,
+      "accuracy": 0.9019607843137255,
+      "macro_f1": 0.5132975551580203,
+      "weighted_f1": 0.8808212611222188,
+      "per_class": {
+        "Safe Prompt": {
+          "precision": 0.8888888888888888,
+          "recall": 0.96,
+          "f1": 0.9230769230769231,
+          "support": 25
+        },
+        "Prompt Injection": {
+          "precision": 0.9545454545454546,
+          "recall": 1.0,
+          "f1": 0.9767441860465116,
+          "support": 21
+        },
+        "Jailbreak": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        "Data Extraction": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 2
+        },
+        "Roleplay Manipulation": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        }
+      }
+    },
+    "jailbreak": {
+      "rows": 4035,
+      "accuracy": 0.9635687732342008,
+      "macro_f1": 0.9623663648701121,
+      "weighted_f1": 0.979292921038055,
+      "per_class": {
+        "Jailbreak": {
+          "precision": 0.9960387323943662,
+          "recall": 0.9433097123801584,
+          "f1": 0.9689573967030615,
+          "support": 2399
+        },
+        "Data Extraction": {
+          "precision": 1.0,
+          "recall": 0.8571428571428571,
+          "f1": 0.9230769230769231,
+          "support": 14
+        },
+        "Roleplay Manipulation": {
+          "precision": 0.995679012345679,
+          "recall": 0.9944512946979038,
+          "f1": 0.9950647748303516,
+          "support": 1622
+        }
+      }
+    },
+    "safe_evaluation": {
+      "rows": 13738,
+      "accuracy": 0.9906827776968992,
+      "macro_f1": 0.4976779902731561,
+      "weighted_f1": 0.995283527788957,
+      "per_class": {
+        "Safe Prompt": {
+          "precision": 1.0,
+          "recall": 0.9907548955375992,
+          "f1": 0.9953559805463122,
+          "support": 13737
+        },
+        "Prompt Injection": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+,predicted::Safe Prompt,predicted::Prompt Injection,predicted::Jailbreak,predicted::Data Extraction,predicted::Roleplay Manipulation
+actual::Safe Prompt,13647,0,115,0,0
+actual::Prompt Injection,1,21,0,0,0
+actual::Jailbreak,129,0,2266,0,6
+actual::Data Extraction,1,0,1,14,0
+actual::Roleplay Manipulation,4,0,9,0,1610

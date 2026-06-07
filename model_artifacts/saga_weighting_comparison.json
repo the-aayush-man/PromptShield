@@ -1,0 +1,365 @@
+{
+  "model": "TF-IDF + Logistic Regression",
+  "selected_candidate": "sqrt_balanced",
+  "candidate_validation_results": {
+    "balanced": {
+      "class_weight": "balanced",
+      "accuracy": 0.9603343806104129,
+      "macro_f1": 0.8276083896209073,
+      "weighted_f1": 0.9622872067915502,
+      "per_class": {
+        "Safe Prompt": {
+          "precision": 0.9931101625102973,
+          "recall": 0.9635954076442378,
+          "f1": 0.9781301862437765,
+          "support": 13762
+        },
+        "Prompt Injection": {
+          "precision": 0.9047619047619048,
+          "recall": 0.8636363636363636,
+          "f1": 0.8837209302325582,
+          "support": 22
+        },
+        "Jailbreak": {
+          "precision": 0.7991602519244226,
+          "recall": 0.9512703040399834,
+          "f1": 0.8686061988971288,
+          "support": 2401
+        },
+        "Data Extraction": {
+          "precision": 0.2830188679245283,
+          "recall": 0.9375,
+          "f1": 0.43478260869565216,
+          "support": 16
+        },
+        "Roleplay Manipulation": {
+          "precision": 0.9993502274204028,
+          "recall": 0.9476278496611213,
+          "f1": 0.9728020240354206,
+          "support": 1623
+        }
+      },
+      "iterations": [
+        450
+      ]
+    },
+    "sqrt_balanced": {
+      "class_weight": {
+        "Safe Prompt": 0.5089326697159995,
+        "Jailbreak": 1.2184837697211364,
+        "Roleplay Manipulation": 1.4817802116618362,
+        "Prompt Injection": 13.14607903290536,
+        "Data Extraction": 15.043640221406225
+      },
+      "accuracy": 0.9831687612208259,
+      "macro_f1": 0.8628939567432352,
+      "weighted_f1": 0.9833547433950841,
+      "per_class": {
+        "Safe Prompt": {
+          "precision": 0.9899818511796733,
+          "recall": 0.9909170178753088,
+          "f1": 0.9904492137850891,
+          "support": 13762
+        },
+        "Prompt Injection": {
+          "precision": 0.65625,
+          "recall": 0.9545454545454546,
+          "f1": 0.7777777777777778,
+          "support": 22
+        },
+        "Jailbreak": {
+          "precision": 0.9471011426153195,
+          "recall": 0.9321116201582674,
+          "f1": 0.9395465994962217,
+          "support": 2401
+        },
+        "Data Extraction": {
+          "precision": 0.45454545454545453,
+          "recall": 0.9375,
+          "f1": 0.6122448979591837,
+          "support": 16
+        },
+        "Roleplay Manipulation": {
+          "precision": 0.9950647748303516,
+          "recall": 0.9938385705483672,
+          "f1": 0.9944512946979038,
+          "support": 1623
+        }
+      },
+      "iterations": [
+        450
+      ]
+    }
+  },
+  "validation_metrics": {
+    "accuracy": 0.9831687612208259,
+    "macro_f1": 0.8628939567432352,
+    "weighted_f1": 0.9833547433950841,
+    "per_class": {
+      "Safe Prompt": {
+        "precision": 0.9899818511796733,
+        "recall": 0.9909170178753088,
+        "f1": 0.9904492137850891,
+        "support": 13762
+      },
+      "Prompt Injection": {
+        "precision": 0.65625,
+        "recall": 0.9545454545454546,
+        "f1": 0.7777777777777778,
+        "support": 22
+      },
+      "Jailbreak": {
+        "precision": 0.9471011426153195,
+        "recall": 0.9321116201582674,
+        "f1": 0.9395465994962217,
+        "support": 2401
+      },
+      "Data Extraction": {
+        "precision": 0.45454545454545453,
+        "recall": 0.9375,
+        "f1": 0.6122448979591837,
+        "support": 16
+      },
+      "Roleplay Manipulation": {
+        "precision": 0.9950647748303516,
+        "recall": 0.9938385705483672,
+        "f1": 0.9944512946979038,
+        "support": 1623
+      }
+    },
+    "by_source": {
+      "injection_benign": {
+        "rows": 51,
+        "accuracy": 0.9019607843137255,
+        "macro_f1": 0.5132975551580203,
+        "weighted_f1": 0.8808212611222188,
+        "per_class": {
+          "Safe Prompt": {
+            "precision": 0.8888888888888888,
+            "recall": 0.96,
+            "f1": 0.9230769230769231,
+            "support": 25
+          },
+          "Prompt Injection": {
+            "precision": 0.9545454545454546,
+            "recall": 1.0,
+            "f1": 0.9767441860465116,
+            "support": 21
+          },
+          "Jailbreak": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          "Data Extraction": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 2
+          },
+          "Roleplay Manipulation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          }
+        }
+      },
+      "jailbreak": {
+        "rows": 4035,
+        "accuracy": 0.9578686493184635,
+        "macro_f1": 0.8649459318702301,
+        "weighted_f1": 0.9749995709788328,
+        "per_class": {
+          "Jailbreak": {
+            "precision": 0.9959946595460614,
+            "recall": 0.932888703626511,
+            "f1": 0.9634093844167025,
+            "support": 2399
+          },
+          "Data Extraction": {
+            "precision": 0.4666666666666667,
+            "recall": 1.0,
+            "f1": 0.6363636363636364,
+            "support": 14
+          },
+          "Roleplay Manipulation": {
+            "precision": 0.995679012345679,
+            "recall": 0.9944512946979038,
+            "f1": 0.9950647748303516,
+            "support": 1622
+          }
+        }
+      },
+      "safe_evaluation": {
+        "rows": 13738,
+        "accuracy": 0.9909011500946281,
+        "macro_f1": 0.49773308957952467,
+        "weighted_f1": 0.995393718380249,
+        "per_class": {
+          "Safe Prompt": {
+            "precision": 1.0,
+            "recall": 0.9909732838319866,
+            "f1": 0.9954661791590493,
+            "support": 13737
+          },
+          "Prompt Injection": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          }
+        }
+      }
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.9849079892280072,
+    "macro_f1": 0.897312827207364,
+    "weighted_f1": 0.9849743896610381,
+    "per_class": {
+      "Safe Prompt": {
+        "precision": 0.9903525315537501,
+        "recall": 0.9920796395872693,
+        "f1": 0.9912153332365325,
+        "support": 13762
+      },
+      "Prompt Injection": {
+        "precision": 0.7777777777777778,
+        "recall": 0.9545454545454546,
+        "f1": 0.8571428571428571,
+        "support": 22
+      },
+      "Jailbreak": {
+        "precision": 0.9522602450359104,
+        "recall": 0.9387755102040817,
+        "f1": 0.9454697986577181,
+        "support": 2401
+      },
+      "Data Extraction": {
+        "precision": 0.5555555555555556,
+        "recall": 0.9375,
+        "f1": 0.6976744186046512,
+        "support": 16
+      },
+      "Roleplay Manipulation": {
+        "precision": 0.9969078540507111,
+        "recall": 0.9932224276032039,
+        "f1": 0.9950617283950617,
+        "support": 1623
+      }
+    },
+    "by_source": {
+      "injection_benign": {
+        "rows": 51,
+        "accuracy": 0.9215686274509803,
+        "macro_f1": 0.4886792452830189,
+        "weighted_f1": 0.8938216796152423,
+        "per_class": {
+          "Safe Prompt": {
+            "precision": 0.8928571428571429,
+            "recall": 1.0,
+            "f1": 0.9433962264150944,
+            "support": 25
+          },
+          "Prompt Injection": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 21
+          },
+          "Jailbreak": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          "Data Extraction": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5,
+            "support": 2
+          },
+          "Roleplay Manipulation": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          }
+        }
+      },
+      "jailbreak": {
+        "rows": 4035,
+        "accuracy": 0.9615861214374225,
+        "macro_f1": 0.8997260044204357,
+        "weighted_f1": 0.9775856172441179,
+        "per_class": {
+          "Jailbreak": {
+            "precision": 0.9960229783473266,
+            "recall": 0.9395581492288454,
+            "f1": 0.9669669669669669,
+            "support": 2399
+          },
+          "Data Extraction": {
+            "precision": 0.5833333333333334,
+            "recall": 1.0,
+            "f1": 0.7368421052631579,
+            "support": 14
+          },
+          "Roleplay Manipulation": {
+            "precision": 0.9969078540507111,
+            "recall": 0.9938347718865598,
+            "f1": 0.9953689410311825,
+            "support": 1622
+          }
+        }
+      },
+      "safe_evaluation": {
+        "rows": 13738,
+        "accuracy": 0.9919930120832727,
+        "macro_f1": 0.49799020682598844,
+        "weighted_f1": 0.9959079154416368,
+        "per_class": {
+          "Safe Prompt": {
+            "precision": 0.9999266270452711,
+            "recall": 0.9920652253039237,
+            "f1": 0.9959804136519769,
+            "support": 13737
+          },
+          "Prompt Injection": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          }
+        }
+      }
+    }
+  },
+  "training": {
+    "train_rows": 142576,
+    "validation_rows": 17824,
+    "test_rows": 17824,
+    "vocabulary_size": 60000,
+    "train_matrix_shape": [
+      142576,
+      60000
+    ],
+    "train_matrix_nonzero_values": 18506536,
+    "max_features": 60000,
+    "max_iterations": 450,
+    "c_value": 2.0,
+    "tolerance": 0.002,
+    "converged": false,
+    "probable_label_issue_rows": 68,
+    "elapsed_seconds": 648.86
+  },
+  "environment": {
+    "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "pandas": "3.0.3",
+    "scikit_learn": "1.9.0",
+    "joblib": "1.5.3"
+  }
+}

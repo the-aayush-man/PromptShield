@@ -1,0 +1,151 @@
+label,rank,feature,coefficient
+Data Extraction,1,ignore previous,11.698174476623535
+Data Extraction,2,bypass,4.845816135406494
+Data Extraction,3,ignore,4.289859771728516
+Data Extraction,4,previous,3.6964070796966553
+Data Extraction,5,dump,3.36525559425354
+Data Extraction,6,inspect,3.2793147563934326
+Data Extraction,7,print,3.1496341228485107
+Data Extraction,8,reveal,2.9913299083709717
+Data Extraction,9,chr,2.9657254219055176
+Data Extraction,10,ssh,2.7614617347717285
+Data Extraction,11,cat,2.733044385910034
+Data Extraction,12,popen,2.7150847911834717
+Data Extraction,13,proc,2.5983192920684814
+Data Extraction,14,show,2.5630483627319336
+Data Extraction,15,leak,2.4848358631134033
+Data Extraction,16,environ,2.4324111938476562
+Data Extraction,17,etc,2.405527114868164
+Data Extraction,18,shadow,2.3316562175750732
+Data Extraction,19,prompt,2.2983648777008057
+Data Extraction,20,whoami,2.2768959999084473
+Data Extraction,21,globals,2.2738640308380127
+Data Extraction,22,contents,2.2719473838806152
+Data Extraction,23,bypass import,2.193368673324585
+Data Extraction,24,from users,2.179349660873413
+Data Extraction,25,all,2.1696674823760986
+Data Extraction,26,the database,2.0920610427856445
+Data Extraction,27,security,1.977553367614746
+Data Extraction,28,user,1.9347901344299316
+Data Extraction,29,select from,1.9336614608764648
+Data Extraction,30,subprocess,1.9326497316360474
+Jailbreak,1,question what,4.934931755065918
+Jailbreak,2,scene,3.4671730995178223
+Jailbreak,3,omit,3.408798933029175
+Jailbreak,4,forget,3.3415305614471436
+Jailbreak,5,overlook,3.2994422912597656
+Jailbreak,6,neglect,3.2925405502319336
+Jailbreak,7,how can,3.2291011810302734
+Jailbreak,8,preceding,3.225954532623291
+Jailbreak,9,foregoing,3.2036004066467285
+Jailbreak,10,disregard,3.191685914993286
+Jailbreak,11,skip,3.1071274280548096
+Jailbreak,12,the given,3.1068215370178223
+Jailbreak,13,is it,3.069429874420166
+Jailbreak,14,ve,3.056833267211914
+Jailbreak,15,tried,3.0565266609191895
+Jailbreak,16,and start,2.9232606887817383
+Jailbreak,17,question,2.922758102416992
+Jailbreak,18,answer to,2.9190192222595215
+Jailbreak,19,prior,2.8792967796325684
+Jailbreak,20,the answer,2.8514788150787354
+Jailbreak,21,your task,2.838883876800537
+Jailbreak,22,earlier,2.807676315307617
+Jailbreak,23,initial,2.748684883117676
+Jailbreak,24,not follow,2.743208169937134
+Jailbreak,25,to,2.7103066444396973
+Jailbreak,26,is there,2.6622588634490967
+Jailbreak,27,my,2.634084701538086
+Jailbreak,28,name,2.549452066421509
+Jailbreak,29,name of,2.5478618144989014
+Jailbreak,30,label best,2.527874231338501
+Prompt Injection,1,run,8.201273918151855
+Prompt Injection,2,execute,7.688478946685791
+Prompt Injection,3,decode,4.552621841430664
+Prompt Injection,4,whoami,4.549987316131592
+Prompt Injection,5,eval,4.189054012298584
+Prompt Injection,6,system,3.752419948577881
+Prompt Injection,7,cmd,2.9950578212738037
+Prompt Injection,8,sh,2.7544825077056885
+Prompt Injection,9,import,2.7062265872955322
+Prompt Injection,10,evil,2.6485280990600586
+Prompt Injection,11,fork,2.5372743606567383
+Prompt Injection,12,import os,2.5086071491241455
+Prompt Injection,13,bypass import,2.3727457523345947
+Prompt Injection,14,to python,2.3618781566619873
+Prompt Injection,15,rm,2.2656004428863525
+Prompt Injection,16,dev,2.2629377841949463
+Prompt Injection,17,exec,2.1771481037139893
+Prompt Injection,18,http,2.0579512119293213
+Prompt Injection,19,javascript,2.015014171600342
+Prompt Injection,20,exploit,2.010605812072754
+Prompt Injection,21,com,1.908193588256836
+Prompt Injection,22,os,1.9002856016159058
+Prompt Injection,23,query select,1.7932372093200684
+Prompt Injection,24,pickle,1.7787190675735474
+Prompt Injection,25,this code,1.7748692035675049
+Prompt Injection,26,this query,1.770151972770691
+Prompt Injection,27,bash,1.7116186618804932
+Prompt Injection,28,fetch,1.6804115772247314
+Prompt Injection,29,system whoami,1.6791455745697021
+Prompt Injection,30,61,1.6577036380767822
+Roleplay Manipulation,1,character,6.137794017791748
+Roleplay Manipulation,2,roleplay,4.682574272155762
+Roleplay Manipulation,3,in character,4.530091762542725
+Roleplay Manipulation,4,pretend,4.462436199188232
+Roleplay Manipulation,5,stay in,4.304872035980225
+Roleplay Manipulation,6,stay,3.873891592025757
+Roleplay Manipulation,7,pretend you,3.09747576713562
+Roleplay Manipulation,8,say,2.5908730030059814
+Roleplay Manipulation,9,description for,2.5809643268585205
+Roleplay Manipulation,10,always,2.4436593055725098
+Roleplay Manipulation,11,responses,2.2962136268615723
+Roleplay Manipulation,12,ai,2.1347975730895996
+Roleplay Manipulation,13,act,2.106314182281494
+Roleplay Manipulation,14,write detailed,2.072981119155884
+Roleplay Manipulation,15,you,2.0521326065063477
+Roleplay Manipulation,16,will,2.033433198928833
+Roleplay Manipulation,17,as,2.0289127826690674
+Roleplay Manipulation,18,you are,2.00223708152771
+Roleplay Manipulation,19,pretend to,1.9600193500518799
+Roleplay Manipulation,20,game,1.9293369054794312
+Roleplay Manipulation,21,something,1.9036228656768799
+Roleplay Manipulation,22,explicit,1.8790473937988281
+Roleplay Manipulation,23,chatgpt,1.8584247827529907
+Roleplay Manipulation,24,to stay,1.8163527250289917
+Roleplay Manipulation,25,user,1.8063474893569946
+Roleplay Manipulation,26,should,1.8016873598098755
+Roleplay Manipulation,27,include,1.7714108228683472
+Roleplay Manipulation,28,response,1.6856436729431152
+Roleplay Manipulation,29,respond,1.6732618808746338
+Roleplay Manipulation,30,roleplaying,1.6544946432113647
+Safe Prompt,1,trigger,4.421761989593506
+Safe Prompt,2,rule,4.07774543762207
+Safe Prompt,3,action,4.0185394287109375
+Safe Prompt,4,identify the,3.737297773361206
+Safe Prompt,5,following python,3.735287666320801
+Safe Prompt,6,question is,3.730895519256592
+Safe Prompt,7,passage,3.6137123107910156
+Safe Prompt,8,example input,3.5158209800720215
+Safe Prompt,9,read the,3.414431571960449
+Safe Prompt,10,from document,3.3035013675689697
+Safe Prompt,11,document titled,3.302865505218506
+Safe Prompt,12,context follows,3.302865505218506
+Safe Prompt,13,context passage,3.302865505218506
+Safe Prompt,14,titled,3.296727180480957
+Safe Prompt,15,passage from,3.290625810623169
+Safe Prompt,16,frac,3.2875683307647705
+Safe Prompt,17,identify,3.281128406524658
+Safe Prompt,18,given context,3.26788330078125
+Safe Prompt,19,which one,3.0256526470184326
+Safe Prompt,20,python function,3.007999897003174
+Safe Prompt,21,python,2.9546267986297607
+Safe Prompt,22,passage and,2.8899803161621094
+Safe Prompt,23,the,2.8735549449920654
+Safe Prompt,24,write,2.8580403327941895
+Safe Prompt,25,the context,2.803468942642212
+Safe Prompt,26,the question,2.8029823303222656
+Safe Prompt,27,follows,2.7322022914886475
+Safe Prompt,28,the trigger,2.599412679672241
+Safe Prompt,29,write python,2.5952680110931396
+Safe Prompt,30,trigger then,2.5690810680389404

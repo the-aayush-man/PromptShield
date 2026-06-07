@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PromptShield</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">AI Security Console</p>
+          <h1>PromptShield</h1>
+        </div>
+        <div class="model-chip" id="modelChip">Model ready</div>
+      </header>
+
+      <main class="workspace">
+        <section class="metrics" aria-label="Security statistics">
+          <article class="metric">
+            <span>Total Prompts</span>
+            <strong id="totalPrompts">0</strong>
+          </article>
+          <article class="metric">
+            <span>Safe Prompts</span>
+            <strong id="safePrompts">0</strong>
+          </article>
+          <article class="metric">
+            <span>Threats Detected</span>
+            <strong id="threatsDetected">0</strong>
+          </article>
+          <article class="metric hot">
+            <span>High Risk</span>
+            <strong id="highRisk">0</strong>
+          </article>
+        </section>
+
+        <section class="main-grid">
+          <div class="panel analyzer-panel">
+            <div class="panel-head">
+              <h2>Prompt Analyzer</h2>
+              <button id="clearHistoryBtn" class="icon-button ghost" title="Clear history" aria-label="Clear history">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 6h18M8 6V4h8v2m-9 4 1 10h8l1-10" />
+                </svg>
+              </button>
+            </div>
+            <textarea
+              id="promptInput"
+              spellcheck="false"
+              placeholder="Paste a user prompt here"
+            ></textarea>
+            <div class="actions">
+              <button id="analyzeBtn" class="primary-button">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v4m0 10v4M3 12h4m10 0h4M5.6 5.6l2.8 2.8m7.2 7.2 2.8 2.8m0-12.8-2.8 2.8m-7.2 7.2-2.8 2.8" />
+                </svg>
+                Analyze
+              </button>
+              <button id="reportBtn" class="secondary-button" disabled>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" />
+                </svg>
+                PDF
+              </button>
+            </div>
+          </div>
+
+          <div class="panel result-panel">
+            <div class="panel-head">
+              <h2>Threat Analysis</h2>
+              <span id="statusPill" class="pill neutral">Awaiting prompt</span>
+            </div>
+            <div class="result-summary">
+              <div>
+                <span>Threat Type</span>
+                <strong id="threatType">-</strong>
+              </div>
+              <div>
+                <span>Risk Score</span>
+                <strong id="riskScore">-</strong>
+              </div>
+              <div>
+                <span>Confidence</span>
+                <strong id="confidenceScore">-</strong>
+              </div>
+              <div>
+                <span>Severity</span>
+                <strong id="severityLevel">-</strong>
+              </div>
+            </div>
+            <div class="split-list">
+              <div>
+                <h3>Triggered Indicators</h3>
+                <ul id="indicatorList" class="compact-list">
+                  <li>No analysis yet</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Mitigations</h3>
+                <ul id="mitigationList" class="compact-list">
+                  <li>No analysis yet</li>
+                </ul>
+              </div>
+            </div>
+            <div class="explain-box">
+              <h3>Explanation</h3>
+              <ul id="explanationList" class="compact-list">
+                <li>No analysis yet</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="visual-grid">
+          <div class="panel chart-panel">
+            <div class="panel-head">
+              <h2>Attack Types</h2>
+            </div>
+            <canvas id="typeChart" width="420" height="260"></canvas>
+          </div>
+          <div class="panel chart-panel">
+            <div class="panel-head">
+              <h2>Threat Distribution</h2>
+            </div>
+            <canvas id="distributionChart" width="420" height="260"></canvas>
+          </div>
+          <div class="panel chart-panel">
+            <div class="panel-head">
+              <h2>History Trend</h2>
+            </div>
+            <canvas id="trendChart" width="420" height="260"></canvas>
+          </div>
+        </section>
+
+        <section class="panel history-panel">
+          <div class="panel-head">
+            <h2>Recent Analysis</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Prompt</th>
+                  <th>Type</th>
+                  <th>Risk</th>
+                  <th>Report</th>
+                </tr>
+              </thead>
+              <tbody id="historyBody">
+                <tr>
+                  <td colspan="5">No prompts analyzed yet</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
