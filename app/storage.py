@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sqlite3
 import uuid
 from datetime import datetime, timezone
@@ -9,7 +10,13 @@ from typing import Any
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "runtime_data"
+DATA_DIR_ENV = os.environ.get("PROMPTSHIELD_DATA_DIR")
+if DATA_DIR_ENV:
+    DATA_DIR = Path(DATA_DIR_ENV)
+elif os.environ.get("VERCEL"):
+    DATA_DIR = Path("/tmp/promptshield")
+else:
+    DATA_DIR = PROJECT_ROOT / "runtime_data"
 DB_PATH = DATA_DIR / "promptshield.sqlite3"
 
 

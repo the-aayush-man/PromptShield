@@ -39,6 +39,26 @@ $env:PYTHONPATH=(Resolve-Path ".python_packages").Path
 & "C:\Users\Aayush\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -B "scripts\smoke_test_promptshield.py"
 ```
 
+## Deploy On Vercel
+
+The project exports a top-level WSGI `app` from `server.py`, and `vercel.json`
+routes all web and API requests to that Python entry point.
+
+Keep these files in the repository:
+
+- `server.py`
+- `vercel.json`
+- `requirements.txt`
+- `app/`
+- `web/`
+- `model_artifacts/promptshield_tfidf_logreg.joblib`
+- `model_artifacts/model_metadata.json`
+
+Do not upload raw datasets. The saved model artifact is enough to run the app.
+
+Note: Vercel serverless storage is temporary, so prompt history may reset after
+redeploys or cold starts. Local runs keep history in `runtime_data/`.
+
 ## Important Files
 
 - `server.py` - local web server and API routing
